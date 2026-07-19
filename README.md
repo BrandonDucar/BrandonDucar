@@ -1,5 +1,8 @@
 # DreamNet
 
+[![DreamLoops CI](https://github.com/BrandonDucar/dreamloops/actions/workflows/ci.yml/badge.svg)](https://github.com/BrandonDucar/dreamloops/actions/workflows/ci.yml) [![ToolGym CI](https://github.com/BrandonDucar/toolgym/actions/workflows/ci.yml/badge.svg)](https://github.com/BrandonDucar/toolgym/actions/workflows/ci.yml) [![DreamLoops release](https://img.shields.io/github/v/release/BrandonDucar/dreamloops?label=DreamLoops)](https://github.com/BrandonDucar/dreamloops/releases/latest)
+
+
 ### Verifiable infrastructure for persistent AI agents
 
 Most agent demos end when the chat ends. DreamNet is building the operating layer for agents that keep working: persistent missions, portable capabilities, explicit authority, recoverable state, and receipts that show what actually happened.
