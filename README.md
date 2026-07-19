@@ -17,6 +17,10 @@ Most agent demos end when the chat ends. DreamNet is building the operating laye
 | [Proof Drop](https://github.com/BrandonDucar/proof-drop-zabal) | Local-first evidence hashing and portable build receipts |
 | [DreamNet ENS](https://github.com/BrandonDucar/dreamnet-ens) | Agent identity passports and service-discovery records for verifiable agent endpoints |
 
+## Independent public adoption
+
+The public [ZOL](https://github.com/bettercallzaal/zol) agent project has merged a [tested DreamLoops persistent-agent graft](https://github.com/bettercallzaal/zol/pull/19), a [Bonfire-backed state adapter](https://github.com/bettercallzaal/zol/pull/16), and recurring [curator](https://github.com/bettercallzaal/zol/pull/21) and [artist spotlight](https://github.com/bettercallzaal/zol/pull/22) loops. ZOL is independently operated; these merged pull requests are public evidence that the contracts can travel beyond DreamNet.
+
 ## What DreamNet can do
 
 - Run persistent agents and fleets that recover from context loss and process restarts.
