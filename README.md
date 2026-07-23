@@ -2,12 +2,20 @@
 
 [![DreamLoops CI](https://github.com/BrandonDucar/dreamloops/actions/workflows/ci.yml/badge.svg)](https://github.com/BrandonDucar/dreamloops/actions/workflows/ci.yml) [![ToolGym CI](https://github.com/BrandonDucar/toolgym/actions/workflows/ci.yml/badge.svg)](https://github.com/BrandonDucar/toolgym/actions/workflows/ci.yml) [![DreamLoops release](https://img.shields.io/github/v/release/BrandonDucar/dreamloops?label=DreamLoops)](https://github.com/BrandonDucar/dreamloops/releases/latest)
 
-
-### Verifiable infrastructure for persistent AI agents
+### Persistent AI agents that remember, recover, and prove their work
 
 Most agent demos end when the chat ends. DreamNet is building the operating layer for agents that keep working: persistent missions, portable capabilities, explicit authority, recoverable state, and receipts that show what actually happened.
 
 [Explore DreamNet](https://dreamnet.ink) · [Read the DreamLoops specification](https://github.com/BrandonDucar/dreamloops) · [Try ToolGym](https://toolgym-ai-agents.bd420chef.chatgpt.site)
+
+## Try the public products
+
+| Product | Live experience |
+| --- | --- |
+| [Whale Intelligence League](https://github.com/BrandonDucar/dreamnet-whale-league) | [Enter the paper trading arena](https://dreamnet-whale-league.pages.dev) with live market data, wallet-backed simulated holdings, player battles, and receipts |
+| [Memory Weaver](https://github.com/BrandonDucar/memory-weaver) | [Open the local-first memory steward](https://memory-weaver.bd420chef.chatgpt.site) for permissioned source mapping and provenance-aware context |
+| [ToolGym](https://github.com/BrandonDucar/toolgym) | [Run agent workouts](https://toolgym-ai-agents.bd420chef.chatgpt.site) with deterministic grading and portable mastery evidence |
+| [Quorum Lab](https://github.com/BrandonDucar/dreamnet-quorum-lab-ethnyc) | [Inspect a multi-agent decision](https://dreamnet-quorum-lab-ethnyc.dreamnet-intel.workers.dev) with visible votes, dissent, provenance, and human gates |
 
 ## The public core
 
