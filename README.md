@@ -6,7 +6,7 @@
 
 Most agent demos end when the chat ends. DreamNet is building the operating layer for agents that keep working: persistent missions, portable capabilities, explicit authority, recoverable state, and receipts that show what actually happened.
 
-[Explore DreamNet](https://dreamnet.ink) · [Read the DreamLoops specification](https://github.com/BrandonDucar/dreamloops) · [Try ToolGym](https://toolgym-ai-agents.bd420chef.chatgpt.site)
+[Explore DreamNet](https://dreamnet.ink) · [Build with the public core](https://github.com/BrandonDucar/Dreamnet) · [Read the DreamLoops specification](https://github.com/BrandonDucar/dreamloops) · [Try ToolGym](https://toolgym-ai-agents.bd420chef.chatgpt.site)
 
 ## Try the public products
 
@@ -21,6 +21,7 @@ Most agent demos end when the chat ends. DreamNet is building the operating laye
 
 | Project | What it demonstrates |
 | --- | --- |
+| [DreamNet Public Core](https://github.com/BrandonDucar/Dreamnet) | Installable, typed contracts for assignments, Capsules, receipts, claims, canonical hashing, and validation without exposing the private production engine |
 | [DreamLoops](https://github.com/BrandonDucar/dreamloops) | Governed operating loops, portable capability Capsules, lineage, rollback, and executable receipts for persistent agents |
 | [ToolGym](https://github.com/BrandonDucar/toolgym) | Model-neutral agent workouts, deterministic grading, applied simulations, field validation, and portable mastery evidence |
 | [Quorum Lab](https://github.com/BrandonDucar/dreamnet-quorum-lab-ethnyc) | Multi-agent decisions with visible votes, disagreement, provenance, safety gates, and a human-controlled execution boundary |
