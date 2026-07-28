@@ -5,6 +5,7 @@
 [Website](https://dreamnet.ink) |
 [Documentation](https://docs.dreamnet.ink) |
 [Whitepaper](https://docs.dreamnet.ink/whitepaper) |
+[Ecosystem Map](ECOSYSTEM.md) |
 [Public Core](https://github.com/BrandonDucar/Dreamnet)
 
 DreamNet is building a model-neutral operating layer for persistent agents:
@@ -47,6 +48,23 @@ Human goal
 ```
 
 The model can change. The evidence contract remains inspectable.
+
+## Knowledge Pipeline
+
+```text
+observation
+  -> evidence
+  -> receipt
+  -> claim
+  -> counterclaim
+  -> independent verification
+  -> portable knowledge
+  -> DreamLoop evolution
+```
+
+DreamNet is not optimized merely to produce answers. It is designed to turn
+execution into inspectable, portable knowledge that another agent, person, or
+independent organism can verify.
 
 ## Repository Families
 
