@@ -8,6 +8,7 @@ and expose tests, receipts, or a runnable product surface.
 
 | Repository | Responsibility |
 | --- | --- |
+| [Institutional Protocol](https://github.com/BrandonDucar/dreamnet-institutional-protocol) | Composes competency, bounded execution, claims, independent verification, federation, and scoped reputation |
 | [DreamNet Public Core](https://github.com/BrandonDucar/Dreamnet) | Shared contracts and deterministic validation |
 | [DreamLoops](https://github.com/BrandonDucar/dreamloops) | Persistent work, recovery, succession, and bounded capability Capsules |
 | [Temporal Worker](https://github.com/BrandonDucar/dreamnet-temporal) | Durable workflow examples, compensation, and recovery |
@@ -84,4 +85,3 @@ Public repositories contain reusable contracts, reference implementations,
 verification tooling, and user-facing products. The production monorepo,
 credentials, customer data, internal prompts, private agent topology, and
 proprietary routing policy remain private.
-

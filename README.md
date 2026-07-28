@@ -16,6 +16,7 @@ independent verification, and content-addressed receipts.
 
 | Repository | Purpose |
 | --- | --- |
+| [Institutional Protocol](https://github.com/BrandonDucar/dreamnet-institutional-protocol) | Executable path from competency and bounded work to disputed claims, independent verification, federation, and scoped reputation |
 | [DreamNet Public Core](https://github.com/BrandonDucar/Dreamnet) | Typed contracts for assignments, Capsules, claims, receipts, and deterministic validation |
 | [DreamLoops](https://github.com/BrandonDucar/dreamloops) | Persistent operating loops, succession, recovery, lineage, and portable capability Capsules |
 | [ToolGym](https://github.com/BrandonDucar/toolgym) | Agent exercises, deterministic grading, practical verification, and portable competency evidence |
@@ -70,6 +71,7 @@ independent organism can verify.
 
 ### Core and Runtime
 
+- [Institutional Protocol](https://github.com/BrandonDucar/dreamnet-institutional-protocol)
 - [DreamNet Public Core](https://github.com/BrandonDucar/Dreamnet)
 - [DreamLoops](https://github.com/BrandonDucar/dreamloops)
 - [Temporal Worker](https://github.com/BrandonDucar/dreamnet-temporal)
