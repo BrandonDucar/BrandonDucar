@@ -8,7 +8,7 @@ and expose tests, receipts, or a runnable product surface.
 
 | Repository | Responsibility |
 | --- | --- |
-| [Institutional Protocol](https://github.com/BrandonDucar/dreamnet-institutional-protocol) | Composes competency, bounded execution, claims, independent verification, federation, and scoped reputation |
+| [Institutional Protocol](https://github.com/BrandonDucar/dreamnet-institutional-protocol) | Composes competency, bounded execution, claims, independent verification, federation, and scoped reputation; [run the guided demo](https://dreamnet-institutional-journey-demo.dreamnet-intel.workers.dev) |
 | [DreamNet Public Core](https://github.com/BrandonDucar/Dreamnet) | Shared contracts and deterministic validation |
 | [DreamLoops](https://github.com/BrandonDucar/dreamloops) | Persistent work, recovery, succession, and bounded capability Capsules |
 | [Temporal Worker](https://github.com/BrandonDucar/dreamnet-temporal) | Durable workflow examples, compensation, and recovery |

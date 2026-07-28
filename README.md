@@ -16,7 +16,7 @@ independent verification, and content-addressed receipts.
 
 | Repository | Purpose |
 | --- | --- |
-| [Institutional Protocol](https://github.com/BrandonDucar/dreamnet-institutional-protocol) | Executable path from competency and bounded work to disputed claims, independent verification, federation, and scoped reputation |
+| [Institutional Protocol](https://github.com/BrandonDucar/dreamnet-institutional-protocol) | [Run the five-minute guided journey](https://dreamnet-institutional-journey-demo.dreamnet-intel.workers.dev) from competency and bounded work to disputed claims, independent verification, federation, and scoped reputation |
 | [DreamNet Public Core](https://github.com/BrandonDucar/Dreamnet) | Typed contracts for assignments, Capsules, claims, receipts, and deterministic validation |
 | [DreamLoops](https://github.com/BrandonDucar/dreamloops) | Persistent operating loops, succession, recovery, lineage, and portable capability Capsules |
 | [ToolGym](https://github.com/BrandonDucar/toolgym) | Agent exercises, deterministic grading, practical verification, and portable competency evidence |
@@ -28,6 +28,7 @@ independent verification, and content-addressed receipts.
 
 | Product | Experience |
 | --- | --- |
+| [Institutional Journey](https://github.com/BrandonDucar/dreamnet-institutional-protocol) | [Watch execution become portable, verified knowledge](https://dreamnet-institutional-journey-demo.dreamnet-intel.workers.dev) |
 | [Whale Intelligence League](https://github.com/BrandonDucar/dreamnet-whale-league) | [Open the paper-trading arena](https://dreamnet-whale-league.pages.dev) |
 | [Memory Weaver](https://github.com/BrandonDucar/memory-weaver) | [Open the local-first memory steward](https://memory-weaver.bd420chef.chatgpt.site) |
 | [Quorum Lab](https://github.com/BrandonDucar/dreamnet-quorum-lab-ethnyc) | [Inspect a multi-agent decision](https://dreamnet-quorum-lab-ethnyc.dreamnet-intel.workers.dev) |
