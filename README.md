@@ -2,10 +2,11 @@
 
 **Persistent AI infrastructure that remembers, recovers, and proves its work.**
 
-[Website](https://dreamnet.ink) |
-[Documentation](https://docs.dreamnet.ink) |
-[Whitepaper](https://docs.dreamnet.ink/whitepaper) |
+[Live Validation](https://dreamnet.dreamnet-intel.workers.dev/validate) |
+[Machine Manifest](https://dreamnet.dreamnet-intel.workers.dev/api/validation/manifest) |
 [Ecosystem Map](ECOSYSTEM.md) |
+[Independent Agent Audit](INDEPENDENT_AGENT_AUDIT.md) |
+[Evidence Snapshot](PUBLIC_EVIDENCE.json) |
 [Public Core](https://github.com/BrandonDucar/Dreamnet)
 
 DreamNet is building a model-neutral operating layer for persistent agents:
@@ -30,8 +31,10 @@ independent verification, and content-addressed receipts.
 | --- | --- |
 | [Institutional Journey](https://github.com/BrandonDucar/dreamnet-institutional-protocol) | [Watch execution become portable, verified knowledge](https://dreamnet-institutional-journey-demo.dreamnet-intel.workers.dev) |
 | [Whale Intelligence League](https://github.com/BrandonDucar/dreamnet-whale-league) | [Open the paper-trading arena](https://dreamnet-whale-league.pages.dev) |
+| [Warper Keeper](https://github.com/BrandonDucar/warper-keeper) | [Open the user-owned portable context workspace](https://warper-keeper.dreamnet-intel.workers.dev) |
+| [Proof Drop](https://github.com/BrandonDucar/proof-drop-zabal) | [Create a local-first evidence receipt](https://proof-drop-zabal.pages.dev) |
 | [Memory Weaver](https://github.com/BrandonDucar/memory-weaver) | [Open the local-first memory steward](https://memory-weaver.bd420chef.chatgpt.site) |
-| [Quorum Lab](https://github.com/BrandonDucar/dreamnet-quorum-lab-ethnyc) | [Inspect a multi-agent decision](https://dreamnet-quorum-lab-ethnyc.dreamnet-intel.workers.dev) |
+| [Quorum Lab](https://github.com/BrandonDucar/dreamnet-quorum-lab-ethnyc) | [Inspect the ETHGlobal New York final-presentation build](https://dreamnet-quorum-lab-ethnyc.dreamnet-intel.workers.dev) and [official showcase](https://ethglobal.com/showcase/quorum-bkhc0) |
 | [ToolGym](https://github.com/BrandonDucar/toolgym) | [Run agent workouts](https://toolgym-ai-agents.bd420chef.chatgpt.site) |
 
 ## Operating Model
@@ -95,6 +98,8 @@ independent organism can verify.
 ### User Products
 
 - [Whale Intelligence League](https://github.com/BrandonDucar/dreamnet-whale-league)
+- [Warper Keeper](https://github.com/BrandonDucar/warper-keeper)
+- [Proof Drop](https://github.com/BrandonDucar/proof-drop-zabal)
 - [Memory Weaver](https://github.com/BrandonDucar/memory-weaver)
 
 ## Public Proof, Private Production
@@ -120,3 +125,10 @@ DreamLoops-based persistent-agent work, including its
 
 DreamNet is early. The goal is not to claim perfect autonomy; it is to make
 useful autonomous work bounded, reproducible, recoverable, and verifiable.
+
+## Verify, Do Not Trust
+
+The public portfolio is designed to be inspected by independent humans and
+agents. Start with the [independent audit contract](INDEPENDENT_AGENT_AUDIT.md)
+and the commit-pinned [evidence snapshot](PUBLIC_EVIDENCE.json). README text is
+context, not proof; source, tests, CI, receipts, and reproducible runs are proof.

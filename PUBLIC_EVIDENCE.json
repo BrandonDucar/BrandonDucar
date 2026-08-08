@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "dreamnet.public-evidence-index.v1",
+  "observedAt": "2026-08-08T05:20:00Z",
+  "owner": "BrandonDucar",
+  "purpose": "Discovery index for independent audits; not a runtime-health claim",
+  "rules": {
+    "readmeIsEvidence": false,
+    "exactCommitRequired": true,
+    "recheckBeforeUse": true,
+    "selfCertificationAccepted": false
+  },
+  "repositories": [
+    {
+      "name": "Dreamnet",
+      "role": "public contracts",
+      "branch": "main",
+      "commit": "74bd405a6aa4af8bfcc8b0277de013ae8ad320ba",
+      "commitWorkflow": { "event": "push", "conclusion": "success", "url": "https://github.com/BrandonDucar/Dreamnet/actions/runs/30321682080" }
+    },
+    {
+      "name": "dreamnet-institutional-protocol",
+      "role": "institutional composition",
+      "branch": "main",
+      "commit": "2c51008342936fde97da770db705c4038efe5c79",
+      "commitWorkflow": { "event": "push", "conclusion": "success", "url": "https://github.com/BrandonDucar/dreamnet-institutional-protocol/actions/runs/30389321076" }
+    },
+    {
+      "name": "dreamloops",
+      "role": "bounded persistent execution",
+      "branch": "main",
+      "commit": "611795bc24550802860b4aa58c1d33987ab0e6bc",
+      "commitWorkflow": { "event": "push", "conclusion": "success", "url": "https://github.com/BrandonDucar/dreamloops/actions/runs/29670057185" }
+    },
+    {
+      "name": "dreamnet-spore-sdk",
+      "role": "federation contracts and transport",
+      "branch": "master",
+      "commit": "4072102ace9c4ccf1dda40302f685ac5d8e01268",
+      "commitWorkflow": null,
+      "workflowNote": "No workflow run was found for this pinned default-branch commit; the latest successful PR run targets a different SHA."
+    },
+    {
+      "name": "dreamnet-claim-factory",
+      "role": "claim production and independent verification",
+      "branch": "main",
+      "commit": "5d8141e1911f7a89630ef0cab2b670cd38f6ec99",
+      "commitWorkflow": { "event": "push", "conclusion": "success", "url": "https://github.com/BrandonDucar/dreamnet-claim-factory/actions/runs/30462856730" }
+    },
+    {
+      "name": "warper-keeper",
+      "role": "user-owned portable context product",
+      "branch": "master",
+      "commit": "c25cfc53188d68de2533c8583a4ffbbe4d238808",
+      "commitWorkflow": { "event": "push", "conclusion": "success", "url": "https://github.com/BrandonDucar/warper-keeper/actions/runs/30500424944" }
+    },
+    {
+      "name": "warper-keeper-trapper-sdk",
+      "role": "portable Trapper verification SDK",
+      "branch": "main",
+      "commit": "221da9b57245e00726aa1a6d08f87b186e3340a0",
+      "commitWorkflow": { "event": "push", "conclusion": "success", "url": "https://github.com/BrandonDucar/warper-keeper-trapper-sdk/actions/runs/30461698888" }
+    },
+    {
+      "name": "dreamnet-cerberus",
+      "role": "offline supply-chain admission",
+      "branch": "main",
+      "commit": "69e250635c6f8a6d21e69da526e899957efdba98",
+      "commitWorkflow": { "event": "workflow_dispatch", "conclusion": "success", "url": "https://github.com/BrandonDucar/dreamnet-cerberus/actions/runs/30381217553" }
+    },
+    {
+      "name": "dreamnet-git-grid",
+      "role": "append-only provenance and indexes",
+      "branch": "main",
+      "commit": "db8c61b0d59a5f83a6c9bf5ff2a164421703b362",
+      "commitWorkflow": { "event": "push", "conclusion": "success", "url": "https://github.com/BrandonDucar/dreamnet-git-grid/actions/runs/30321756189" }
+    },
+    {
+      "name": "dreamnet-trading-trappers",
+      "role": "paper-only research integration",
+      "branch": "main",
+      "commit": "9dc326f57c8ba18819bea39e19ee67142f9b1746",
+      "commitWorkflow": { "event": "push", "conclusion": "success", "url": "https://github.com/BrandonDucar/dreamnet-trading-trappers/actions/runs/30511640101" }
+    },
+    {
+      "name": "dreamnet-whale-league",
+      "role": "paper-only market research and battle product",
+      "branch": "main",
+      "commit": "82924d3c0d54badbd4d3204e8e9054eae8f1c42d",
+      "commitWorkflow": null,
+      "liveUrl": "https://dreamnet-whale-league.pages.dev"
+    },
+    {
+      "name": "proof-drop-zabal",
+      "role": "local-first evidence receipt product",
+      "branch": "main",
+      "commit": "f2ef2c4c63b725d58eefccdf0257320fcbb26617",
+      "commitWorkflow": null,
+      "liveUrl": "https://proof-drop-zabal.pages.dev"
+    },
+    {
+      "name": "memory-weaver",
+      "role": "local-first memory stewardship",
+      "branch": "main",
+      "commit": "538ff6e435abd5467b322311a84a89839f618429",
+      "commitWorkflow": { "event": "push", "conclusion": "success", "url": "https://github.com/BrandonDucar/memory-weaver/actions/runs/29698290311" }
+    },
+    {
+      "name": "toolgym",
+      "role": "agent competency evaluation",
+      "branch": "main",
+      "commit": "769282bf671c89987c08757b5846a832876c07c0",
+      "commitWorkflow": { "event": "push", "conclusion": "success", "url": "https://github.com/BrandonDucar/toolgym/actions/runs/29670057949" }
+    },
+    {
+      "name": "dreamnet-quorum-lab-ethnyc",
+      "role": "multi-agent decision demonstration",
+      "branch": "main",
+      "commit": "01960adda689e235b3b496d533820bac00ce65a7",
+      "commitWorkflow": { "event": "push", "conclusion": "success", "url": "https://github.com/BrandonDucar/dreamnet-quorum-lab-ethnyc/actions/runs/27471414577" },
+      "liveUrl": "https://dreamnet-quorum-lab-ethnyc.dreamnet-intel.workers.dev",
+      "showcaseUrl": "https://ethglobal.com/showcase/quorum-bkhc0",
+      "eventRecognition": {
+        "claim": "Selected for ETHGlobal New York final presentations in the top-25 cohort",
+        "evidencePosture": "Operator-held event selection notice; official public showcase confirms the submitted project, not the top-25 ranking"
+      }
+    }
+  ]
+}
