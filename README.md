@@ -120,3 +120,5 @@ DreamLoops-based persistent-agent work, including its
 
 DreamNet is early. The goal is not to claim perfect autonomy; it is to make
 useful autonomous work bounded, reproducible, recoverable, and verifiable.
+
+<!-- gitarmy-wallet:v1 {"chain":"solana","address":"9y2637p2vJkvpD6TTNEkMA65usiAN9eweFifdRFXC7YN"} -->
