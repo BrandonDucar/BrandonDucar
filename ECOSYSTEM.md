@@ -1,87 +1,63 @@
 # DreamNet Ecosystem Map
 
-DreamNet's public repositories are organized by responsibility. Each repository
-should solve one legible problem, declare its relationship to the public core,
-and expose tests, receipts, or a runnable product surface.
+Snapshot: 2026-09-22. This file is a projection. A repo existing is not evidence that DreamNet uses it.
 
-## 1. Core and Runtime
+Canonical runtime: private `BrandonDucar/dream-net`.
+Public contracts: `Dreamnet` (@dreamnet/public-core, not published to npm yet).
+Receipt family converging: `RCPT-{YYYYMMDD}-{SURFACE}-{SEQ}`.
+ProofStack production writer/readback: not closed.
 
-| Repository | Responsibility |
-| --- | --- |
-| [Institutional Protocol](https://github.com/BrandonDucar/dreamnet-institutional-protocol) | Composes competency, bounded execution, claims, independent verification, federation, and scoped reputation; [run the guided demo](https://dreamnet-institutional-journey-demo.dreamnet-intel.workers.dev) |
-| [DreamNet Public Core](https://github.com/BrandonDucar/Dreamnet) | Shared contracts and deterministic validation |
-| [DreamLoops](https://github.com/BrandonDucar/dreamloops) | Persistent work, recovery, succession, and bounded capability Capsules |
-| [Temporal Worker](https://github.com/BrandonDucar/dreamnet-temporal) | Durable workflow examples, compensation, and recovery |
+Machine-readable seed: `dreamnet.yml` in this repo. Each public repo should grow the same block.
 
-## 2. Knowledge Manufacturing
+Roles: protocol | library | product | lab | satellite | archive-candidate.
+Maturity: stable | early | experiment | inactive-not-obsolete.
 
-| Repository | Responsibility |
-| --- | --- |
-| [Claim Factory](https://github.com/BrandonDucar/dreamnet-claim-factory) | Evidence-backed claims and independent verification factories |
-| [GitGrid](https://github.com/BrandonDucar/dreamnet-git-grid) | Git-native append-only events, provenance, and rebuildable indexes |
-| [Cerberus](https://github.com/BrandonDucar/dreamnet-cerberus) | Offline supply-chain inspection before untrusted code executes |
-| [ToolGym](https://github.com/BrandonDucar/toolgym) | Competency exercises, grading, and portable mastery evidence |
-| [Quorum Lab](https://github.com/BrandonDucar/dreamnet-quorum-lab-ethnyc) | Multi-agent decisions with visible uncertainty and human gates |
-| [Proof Drop](https://github.com/BrandonDucar/proof-drop-zabal) | Sanitized, portable evidence bundles |
-| [QuillCode](https://github.com/BrandonDucar/dreamnet-quillcode) | Bounded engineering packets compiled from approved proposals |
+`dreamnet-temporal` is listed in older maps and is **not** in the current public set. Do not invent it here.
 
-The shared lifecycle is:
+## Protocol and library
 
-```text
-observation
-  -> evidence
-  -> receipt
-  -> claim
-  -> counterclaim
-  -> verification
-  -> reputation
-  -> trust
-  -> reusable knowledge
-```
+| Repo | Role | Maturity | Last push (approx) | Notes |
+| --- | --- | --- | --- | --- |
+| [Dreamnet](https://github.com/BrandonDucar/Dreamnet) | protocol | early | 2026-07-28 | Public Core. Install still GitHub URL. npm publish not done. |
+| [dreamloops](https://github.com/BrandonDucar/dreamloops) | library | early | 2026-07-19 | Loops + Capsules. ZOL grafts are independent evidence. |
+| [dreamnet-institutional-protocol](https://github.com/BrandonDucar/dreamnet-institutional-protocol) | protocol | early | 2026-07-28 | Overlay, not the private runtime. |
+| [dreamnet-spore-sdk](https://github.com/BrandonDucar/dreamnet-spore-sdk) | protocol | early | 2026-09-10 | Live `https://dreamnet.ink/.well-known/spore` ACTIVE. Manifest digest sha256:87a354d8… |
+| [dreamnet-git-grid](https://github.com/BrandonDucar/dreamnet-git-grid) | library | early | 2026-07-28 | Git-native events. |
+| [dreamnet-claim-factory](https://github.com/BrandonDucar/dreamnet-claim-factory) | library | early | 2026-07-29 | Separate produce vs verify. |
+| [dreamnet-cerberus](https://github.com/BrandonDucar/dreamnet-cerberus) | library | early | 2026-07-28 | Offline supply-chain scan. |
+| [proof-drop-zabal](https://github.com/BrandonDucar/proof-drop-zabal) | library | early | 2026-06-30 | Local hash receipts. |
+| [dreamnet-ens](https://github.com/BrandonDucar/dreamnet-ens) | library | early | 2026-07-19 | Identity profiles. |
+| [warper-keeper-trapper-sdk](https://github.com/BrandonDucar/warper-keeper-trapper-sdk) | library | early | 2026-07-29 | Trapper CLI. |
+| [toolgym](https://github.com/BrandonDucar/toolgym) | library | early | 2026-09-13 | 11 open issues. |
+| [dreamnet-quillcode](https://github.com/BrandonDucar/dreamnet-quillcode) | library | experiment | 2026-06-15 | Proposal compiler. |
 
-## 3. Federation, Identity, and Transport
+No recent commits ≠ obsolete. Classify before archive.
 
-| Repository | Responsibility |
-| --- | --- |
-| [Spore SDK](https://github.com/BrandonDucar/dreamnet-spore-sdk) | Portable observations, assignments, evidence, receipts, and claims |
-| [DreamNet ENS](https://github.com/BrandonDucar/dreamnet-ens) | Operator-owned agent identity and service discovery |
+## Products
 
-## 4. User Products
+| Repo | Role | Maturity | Demo |
+| --- | --- | --- | --- |
+| [memory-weaver](https://github.com/BrandonDucar/memory-weaver) | product | early | https://memory-weaver.bd420chef.chatgpt.site |
+| [dreamnet-whale-league](https://github.com/BrandonDucar/dreamnet-whale-league) | product | early | https://dreamnet-whale-league.pages.dev (paper-only) |
+| [dreamnet-whale-league-site](https://github.com/BrandonDucar/dreamnet-whale-league-site) | product | early | marketing site |
+| [warper-keeper](https://github.com/BrandonDucar/warper-keeper) | product | early | https://warper-keeper.dreamnet-intel.workers.dev |
+| [dreamnet-intelligence-atlas](https://github.com/BrandonDucar/dreamnet-intelligence-atlas) | product | experiment | Worker homepage |
+| [dreamnet-songs](https://github.com/BrandonDucar/dreamnet-songs) | product | early | https://dreamnet-songs.pages.dev |
+| [dreamnet-trading-trappers](https://github.com/BrandonDucar/dreamnet-trading-trappers) | product | experiment | paper-only research |
 
-| Repository | Responsibility |
-| --- | --- |
-| [Whale Intelligence League](https://github.com/BrandonDucar/dreamnet-whale-league) | Holdings-backed paper trading, market intelligence, and player battles |
-| [Memory Weaver](https://github.com/BrandonDucar/memory-weaver) | Local-first context discovery, memory stewardship, and remixing |
+## Labs — not production infrastructure
 
-## 5. Labs and Public Experiments
+Do not archive yet. Trace deploys/webhooks/homepages first.
 
-Labs are useful demonstrations, but they are not presented as production
-infrastructure. They use the `dreamnet-lab` topic so visitors can distinguish
-experiments from supported products.
+- [wavewarz-gravity-board](https://github.com/BrandonDucar/wavewarz-gravity-board)
+- [zabal-recording-scout](https://github.com/BrandonDucar/zabal-recording-scout)
+- [pi-boost](https://github.com/BrandonDucar/pi-boost)
+- [FlockGPScameras](https://github.com/BrandonDucar/FlockGPScameras)
+- [zaostock-live-command](https://github.com/BrandonDucar/zaostock-live-command)
+- [dreamnet-quorum-lab-ethnyc](https://github.com/BrandonDucar/dreamnet-quorum-lab-ethnyc) (hackathon lab with a live Worker)
 
-- [WaveWarZ Gravity Board](https://github.com/BrandonDucar/wavewarz-gravity-board)
-- [ZABAL Recording Scout](https://github.com/BrandonDucar/zabal-recording-scout)
-- [Flock GPS Cameras](https://github.com/BrandonDucar/FlockGPScameras)
-- [Pi Boost](https://github.com/BrandonDucar/pi-boost)
+## Honest wiring
 
-## Repository Contract
+Sibling repos may connect by HTTP, MCP, NATS, Temporal, webhook, CLI, contract, or federation. Absence of an npm import in private `dream-net` is not absence of architecture. Production ProofStack join is still the missing canonical writer.
 
-New public repositories use these rules:
-
-1. Use lowercase kebab-case names, normally prefixed with `dreamnet-`.
-2. Add exactly one family topic: `dreamnet-core`, `dreamnet-runtime`,
-   `dreamnet-trust`, `dreamnet-data`, `dreamnet-integration`,
-   `dreamnet-product`, or `dreamnet-lab`.
-3. Include a concise description, homepage when one exists, license, quick
-   start, security boundary, and current maturity status.
-4. State whether examples are live, simulated, synthetic, or paper-only.
-5. Link back to this map and the DreamNet Public Core.
-6. Archive superseded repositories only after dependency, deployment, package,
-   webhook, and documentation references have been checked.
-
-## Public and Private Boundary
-
-Public repositories contain reusable contracts, reference implementations,
-verification tooling, and user-facing products. The production monorepo,
-credentials, customer data, internal prompts, private agent topology, and
-proprietary routing policy remain private.
+Do not add a private→public dependency just to make the graph look connected.
