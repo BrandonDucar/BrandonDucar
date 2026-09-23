@@ -3,122 +3,52 @@
 **Persistent AI infrastructure that remembers, recovers, and proves its work.**
 
 [Website](https://dreamnet.ink) |
-[Documentation](https://docs.dreamnet.ink) |
-[Whitepaper](https://docs.dreamnet.ink/whitepaper) |
+[Public verification](https://dreamnet.dreamnet-intel.workers.dev/validate) |
 [Ecosystem Map](ECOSYSTEM.md) |
 [Public Core](https://github.com/BrandonDucar/Dreamnet)
 
-DreamNet is building a model-neutral operating layer for persistent agents:
-bounded missions, portable capabilities, recoverable state, explicit authority,
-independent verification, and content-addressed receipts.
+Canonical **runtime** is private `BrandonDucar/dream-net`.
+These public repositories are contracts, products, and labs. A listed repo is not proof it is deployed or imported.
 
-## Start Here
+Connections exist. Automatic evidence join does not. ProofStack production writer/readback is not closed as of 2026-09-22.
 
-| Repository | Purpose |
+## Roles
+
+| Kind | Meaning |
 | --- | --- |
-| [Institutional Protocol](https://github.com/BrandonDucar/dreamnet-institutional-protocol) | [Run the five-minute guided journey](https://dreamnet-institutional-journey-demo.dreamnet-intel.workers.dev) from competency and bounded work to disputed claims, independent verification, federation, and scoped reputation |
-| [DreamNet Public Core](https://github.com/BrandonDucar/Dreamnet) | Typed contracts for assignments, Capsules, claims, receipts, and deterministic validation |
-| [DreamLoops](https://github.com/BrandonDucar/dreamloops) | Persistent operating loops, succession, recovery, lineage, and portable capability Capsules |
-| [ToolGym](https://github.com/BrandonDucar/toolgym) | Agent exercises, deterministic grading, practical verification, and portable competency evidence |
-| [Claim Factory](https://github.com/BrandonDucar/dreamnet-claim-factory) | Credentialed claim production with separate, independent verification factories |
-| [Cerberus](https://github.com/BrandonDucar/dreamnet-cerberus) | Offline supply-chain inspection for repositories, packages, hooks, workflows, and agent bundles |
-| [GitGrid](https://github.com/BrandonDucar/dreamnet-git-grid) | Git-native, append-only events, provenance, receipts, and rebuildable indexes |
+| protocol / library | Contracts and tools. Inactivity may mean stable, not dead. |
+| product | User-facing. Paper-only where stated. |
+| lab | Not production infrastructure. Do not archive without tracing deploys. |
 
-## Live Products
+Machine-readable seed: [`dreamnet.yml`](dreamnet.yml).
 
-| Product | Experience |
+## Start here
+
+| Repository | Role |
 | --- | --- |
-| [Institutional Journey](https://github.com/BrandonDucar/dreamnet-institutional-protocol) | [Watch execution become portable, verified knowledge](https://dreamnet-institutional-journey-demo.dreamnet-intel.workers.dev) |
-| [Whale Intelligence League](https://github.com/BrandonDucar/dreamnet-whale-league) | [Open the paper-trading arena](https://dreamnet-whale-league.pages.dev) |
-| [Memory Weaver](https://github.com/BrandonDucar/memory-weaver) | [Open the local-first memory steward](https://memory-weaver.bd420chef.chatgpt.site) |
-| [Quorum Lab](https://github.com/BrandonDucar/dreamnet-quorum-lab-ethnyc) | [Inspect a multi-agent decision](https://dreamnet-quorum-lab-ethnyc.dreamnet-intel.workers.dev) |
-| [ToolGym](https://github.com/BrandonDucar/toolgym) | [Run agent workouts](https://toolgym-ai-agents.bd420chef.chatgpt.site) |
+| [Public Core](https://github.com/BrandonDucar/Dreamnet) | Typed assignments, Capsules, claims, receipts |
+| [DreamLoops](https://github.com/BrandonDucar/dreamloops) | Loops, Capsules, lineage |
+| [Spore SDK](https://github.com/BrandonDucar/dreamnet-spore-sdk) | Federation envelopes; live `/.well-known/spore` on dreamnet.ink |
+| [ToolGym](https://github.com/BrandonDucar/toolgym) | Graded exercises |
+| [Claim Factory](https://github.com/BrandonDucar/dreamnet-claim-factory) | Produce vs verify |
+| [Cerberus](https://github.com/BrandonDucar/dreamnet-cerberus) | Offline supply-chain scan |
+| [GitGrid](https://github.com/BrandonDucar/dreamnet-git-grid) | Git-native events |
 
-## Operating Model
+## Products
 
-```text
-Human goal
-  -> assignment
-  -> capability Capsule
-  -> bounded DreamLoop
-  -> authorized tools and models
-  -> execution
-  -> producing Claim Factory
-  -> independent Verification Factory
-  -> receipt and Proof Drop
-  -> durable graph and memory
-```
+| Product | Note |
+| --- | --- |
+| [Whale Intelligence League](https://dreamnet-whale-league.pages.dev) | Paper-only |
+| [Memory Weaver](https://memory-weaver.bd420chef.chatgpt.site) | Local-first |
+| [Warper Keeper](https://warper-keeper.dreamnet-intel.workers.dev) | Portable context |
+| [Quorum Lab](https://dreamnet-quorum-lab-ethnyc.dreamnet-intel.workers.dev) | Lab / hackathon |
+| [Proof Drop](https://proof-drop-zabal.pages.dev) | Local receipts |
 
-The model can change. The evidence contract remains inspectable.
+## Public vs private
 
-## Knowledge Pipeline
+Production monorepo, credentials, customer data, internal prompts, and private topology stay private.
+Public repos do not grant wallet, signer, or production authority.
 
-```text
-observation
-  -> evidence
-  -> receipt
-  -> claim
-  -> counterclaim
-  -> independent verification
-  -> portable knowledge
-  -> DreamLoop evolution
-```
-
-DreamNet is not optimized merely to produce answers. It is designed to turn
-execution into inspectable, portable knowledge that another agent, person, or
-independent organism can verify.
-
-## Repository Families
-
-### Core and Runtime
-
-- [Institutional Protocol](https://github.com/BrandonDucar/dreamnet-institutional-protocol)
-- [DreamNet Public Core](https://github.com/BrandonDucar/Dreamnet)
-- [DreamLoops](https://github.com/BrandonDucar/dreamloops)
-- [Temporal Worker](https://github.com/BrandonDucar/dreamnet-temporal)
-- [Spore SDK](https://github.com/BrandonDucar/dreamnet-spore-sdk)
-
-### Trust and Verification
-
-- [Claim Factory](https://github.com/BrandonDucar/dreamnet-claim-factory)
-- [Cerberus](https://github.com/BrandonDucar/dreamnet-cerberus)
-- [GitGrid](https://github.com/BrandonDucar/dreamnet-git-grid)
-- [ToolGym](https://github.com/BrandonDucar/toolgym)
-- [Quorum Lab](https://github.com/BrandonDucar/dreamnet-quorum-lab-ethnyc)
-- [Proof Drop](https://github.com/BrandonDucar/proof-drop-zabal)
-- [QuillCode](https://github.com/BrandonDucar/dreamnet-quillcode)
-
-### Identity and Discovery
-
-- [DreamNet ENS](https://github.com/BrandonDucar/dreamnet-ens)
-
-### User Products
-
-- [Whale Intelligence League](https://github.com/BrandonDucar/dreamnet-whale-league)
-- [Memory Weaver](https://github.com/BrandonDucar/memory-weaver)
-
-## Public Proof, Private Production
-
-The production monorepo, customer data, credentials, internal prompts, routing
-policy, and private swarm topology remain private. Public repositories are
-scoped contracts, reference implementations, and runnable product surfaces.
-
-The independent [ZOL](https://github.com/bettercallzaal/zol) project has merged
-DreamLoops-based persistent-agent work, including its
-[persistent-agent graft](https://github.com/bettercallzaal/zol/pull/19) and
-[Bonfire state adapter](https://github.com/bettercallzaal/zol/pull/16).
-
-## Current Focus
-
-- Receipt-backed operational graphs
-- Persistent agent recovery and succession
-- Independent Claim Factories
-- Supply-chain defense for agent workspaces
-- ToolGym competency receipts
-- Local-first memory and context transport
-- Human-controlled market intelligence and simulation
-
-DreamNet is early. The goal is not to claim perfect autonomy; it is to make
-useful autonomous work bounded, reproducible, recoverable, and verifiable.
+Independent [ZOL](https://github.com/bettercallzaal/zol) grafts of DreamLoops are evidence of reuse, not DreamNet control.
 
 <!-- gitarmy-wallet:v1 {"chain":"solana","address":"9y2637p2vJkvpD6TTNEkMA65usiAN9eweFifdRFXC7YN"} -->

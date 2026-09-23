@@ -1,0 +1,11 @@
+dreamnet:
+  role: map
+  maturity: living
+  canonical_repo: false
+  runtime_required: false
+  contract_package: "@dreamnet/public-core"
+  receipt_schema: "RCPT-v1"
+  owner: DreamNet
+  last_verified: "2026-09-22"
+  canonical_runtime: "BrandonDucar/dream-net"
+  note: "Private runtime is not this repo. Public repos are contracts, products, labs."
