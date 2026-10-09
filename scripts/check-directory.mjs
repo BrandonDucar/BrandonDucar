@@ -18,6 +18,10 @@ let internalLinks=0;
 for(const relative of pages){
   const file=path.join(site,relative),html=fs.readFileSync(file,'utf8');
   for(const token of ['<title>','name="description"','rel="canonical"','<h1>','og:image'])assert(html.includes(token),relative+' missing '+token);
+  const preview=html.match(/property="og:image" content="([^"]+)"/)?.[1];
+  assert(preview,'Missing sharing preview');
+  const previewPath=new URL(preview).pathname.replace(/^\/BrandonDucar\//,'');
+  assert(fs.existsSync(path.join(site,previewPath)),relative+' missing preview file');
   assert(!/\b(?:undefined|null)\b/.test(html),relative+' unresolved value');
   for(const match of html.matchAll(/(?:href|src)="([^"]+)"/g)){
     const value=match[1];if(/^(https?:|#)/.test(value))continue;
