@@ -52,3 +52,7 @@ DreamNet is early. Each repo has its own implementation boundaries and license.
 A receipt is not proof that every claim inside it is true, and a capability is
 not permission to act. Private credentials, customer data, and operating context
 do not belong in public examples.
+
+## License
+
+Original software and project documentation are licensed under Apache-2.0. See [LICENSE](LICENSE). See [NOTICE](NOTICE) for attribution, licensing scope and third-party/media exclusions.
