@@ -85,3 +85,27 @@ Public repositories contain reusable contracts, reference implementations,
 verification tooling, and user-facing products. The production monorepo,
 credentials, customer data, internal prompts, private agent topology, and
 proprietary routing policy remain private.
+
+## Directory And Additional Products
+
+The [public project directory](https://brandonducar.github.io/BrandonDucar/)
+indexes all 32 public repositories observed on October 9, 2026, with individual
+project pages, source links, maturity labels, and attributed partner forks.
+It is a discovery surface, not a runtime census.
+
+| Project | Role and boundary |
+| --- | --- |
+| [Darkhalo](https://github.com/BrandonDucar/darkhalo) | Local run inspection; review capsules are not authority. Source-available with retained upstream restrictions. |
+| [Warper Keeper](https://github.com/BrandonDucar/warper-keeper) | Source-first context bundles for humans and agents. |
+| [Trapper SDK](https://github.com/BrandonDucar/warper-keeper-trapper-sdk) | Bundle verification and archive tooling. |
+| [LaunchCast](https://github.com/BrandonDucar/launchcast) | Local video compilation; upload adapters are not implemented. |
+| [Dreamnetiopi](https://github.com/BrandonDucar/dreamnetopi-hackday) | Merchant-operations rehearsal with simulated integrations. |
+| [Trading Trappers](https://github.com/BrandonDucar/dreamnet-trading-trappers) | Paper research contracts; no trading authority. |
+| [Intelligence Atlas](https://github.com/BrandonDucar/dreamnet-intelligence-atlas) | Evidence-linked events and exports; assess source freshness. |
+| [Songs](https://github.com/BrandonDucar/dreamnet-songs) | Media releases and machine-readable metadata. |
+| [ZAOstock Live Command](https://github.com/BrandonDucar/zaostock-live-command) | Event coordination and rehearsal; historical event context is not proof of use. |
+
+The Temporal, ZORCA, and ZAOstock repositories in this account are forks. Their
+presence in this directory does not transfer upstream ownership or license rights.
+There is no requirement to adopt the entire DreamNet stack to use a standalone tool.
+
