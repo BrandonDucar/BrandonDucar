@@ -1,0 +1,33 @@
+# Public Directory Maintenance
+
+The GitHub Pages source is `main:/docs`. The static directory requires no API
+keys, application backend, external fonts, model calls, or build dependencies.
+It does not replace the linked applications or certify their runtimes.
+
+## Update
+
+1. Edit public project metadata in `docs/catalog.json`.
+2. Keep project names aligned with repository names. Preserve fork attribution.
+3. Update actual screenshot files in `docs/assets/` only with public-safe captures.
+4. Run `node scripts/build-directory.mjs` (Node.js 20+).
+5. Run `node scripts/check-directory.mjs`.
+6. Review generated changes and inspect desktop/mobile layouts before merging.
+
+The generator owns the HTML, CSS, search script, sitemap, and robots file.
+The catalog owns titles, descriptions, type labels, source links, and destinations.
+Capture dates and editorial copy are in the generator; update them when evidence
+changes. Do not turn a prototype label into a production claim without evidence.
+
+GitHub About metadata is managed separately; changing the catalog does not
+silently change another repository's description, topics, or homepage.
+
+## Evidence Boundaries
+
+- The directory is an October 9, 2026 inventory, not a live fleet monitor.
+- Actual screenshots can contain synthetic example data; captions must say so.
+- Source availability does not imply an unrestricted open-source license.
+- A frontend HTTP 200 does not verify authenticated backend operations.
+- Do not add private inventories, traffic reports, credentials, or internal paths.
+
+Rollback a directory change with a reviewed Git revert. Do not overwrite
+concurrent contributions or delete the Pages site to undo a content change.
