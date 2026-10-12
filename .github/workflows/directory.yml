@@ -1,9 +1,9 @@
 name: Public directory checks
 on:
   push:
-    paths: ['docs/**', 'scripts/**', '.github/workflows/directory.yml']
+    paths: ['docs/**', 'scripts/**', '.github/**', '*.md']
   pull_request:
-    paths: ['docs/**', 'scripts/**', '.github/workflows/directory.yml']
+    paths: ['docs/**', 'scripts/**', '.github/**', '*.md']
 permissions:
   contents: read
 jobs:
@@ -18,5 +18,6 @@ jobs:
         with:
           node-version: '22'
       - run: node scripts/check-directory.mjs
+      - run: node --test scripts/visitor-paths.test.mjs
       - run: node scripts/build-directory.mjs
       - run: git diff --exit-code -- docs

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: General questions and public contracts
+    url: https://github.com/BrandonDucar/Dreamnet/discussions
+    about: Discuss the public ecosystem without opening a product bug.
+  - name: Support and security-sensitive reporting
+    url: https://github.com/BrandonDucar/BrandonDucar/blob/main/SUPPORT.md
+    about: Read the public/private boundaries before sharing logs or security details.

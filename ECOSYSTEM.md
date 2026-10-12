@@ -4,6 +4,16 @@ DreamNet's public repositories are organized by responsibility. Each repository
 should solve one legible problem, declare its relationship to the public core,
 and expose tests, receipts, or a runnable product surface.
 
+## Independent Products, Optional Connections
+
+Products keep their own setup, license, data boundaries, release lifecycle and
+user experience. Using a public product should not require the private operational
+monorepo. Connections use explicit, versioned interfaces; they do not merge data
+stores, share credentials or inherit execution permission. Check each adapter's
+documented compatibility rather than assuming every connection is implemented.
+
+[Get help](SUPPORT.md) or [propose an integration](https://github.com/BrandonDucar/BrandonDucar/issues/new?template=02-integration.yml).
+
 ## 1. Core and Runtime
 
 | Repository | Responsibility |
