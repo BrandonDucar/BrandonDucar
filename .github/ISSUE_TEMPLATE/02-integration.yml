@@ -1,0 +1,41 @@
+name: Integration proposal
+description: Connect independent products through public, scoped interfaces.
+title: "[Integration] "
+body:
+  - type: markdown
+    attributes:
+      value: "Proposals are public and do not grant runtime access or permission to deploy. Keep private operational details out."
+  - type: input
+    id: product
+    attributes:
+      label: DreamNet product or repository
+    validations:
+      required: true
+  - type: input
+    id: counterpart
+    attributes:
+      label: Other product and public interface
+      description: Public repository or API documentation, plus the version if known.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: User outcome
+      description: What becomes possible or easier? Who benefits?
+    validations:
+      required: true
+  - type: textarea
+    id: boundary
+    attributes:
+      label: Data and permission boundaries
+      description: What crosses between the products? Who owns it? Note any writes, costs or human approvals. Do not provide credentials.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Smallest acceptance test
+      description: Describe a synthetic input, expected output and a failure or denial case. Separate already tested behavior from proposed behavior.
+    validations:
+      required: true

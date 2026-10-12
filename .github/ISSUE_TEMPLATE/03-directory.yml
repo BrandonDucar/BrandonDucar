@@ -1,0 +1,20 @@
+name: Directory correction
+description: Report a broken link, inaccurate description or accessibility problem.
+title: "[Directory] "
+body:
+  - type: input
+    id: product
+    attributes:
+      label: Project or page
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What needs changing?
+      description: Include the public URL, what you observed and a proposed correction if known. For accessibility issues, include browser and assistive technology if relevant.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "Only attach public-safe evidence. Do not include private source, tokens or customer information."

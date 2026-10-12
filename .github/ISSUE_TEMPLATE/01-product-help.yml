@@ -1,0 +1,41 @@
+name: Product help or bug report
+description: Get help with a public product, even if you are unsure which repo owns it.
+title: "[Help] "
+body:
+  - type: markdown
+    attributes:
+      value: "This is public. Use synthetic examples; never attach credentials, private source, customer data or unredacted logs. For vulnerabilities, follow SUPPORT.md instead."
+  - type: input
+    id: product
+    attributes:
+      label: Product or repository
+      placeholder: e.g. Darkhalo, LaunchCast, Warper Keeper
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version and environment
+      description: Release or commit, browser or OS, and local vs hosted use. Say unknown if needed.
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: What were you trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps, expected result and actual result
+      description: Include the smallest safe reproduction and exact error text with sensitive values removed.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Public report check
+      options:
+        - label: I removed credentials, private source, personal data and customer data from this report.
+          required: true

@@ -11,12 +11,20 @@ It does not replace the linked applications or certify their runtimes.
 3. Update actual screenshot files in `docs/assets/` only with public-safe captures.
 4. Run `node scripts/build-directory.mjs` (Node.js 20+).
 5. Run `node scripts/check-directory.mjs`.
-6. Review generated changes and inspect desktop/mobile layouts before merging.
+6. Run `node --test scripts/visitor-paths.test.mjs`.
+7. Review generated changes and inspect desktop/mobile layouts before merging.
 
 The generator owns the HTML, CSS, search script, sitemap, and robots file.
 The catalog owns titles, descriptions, type labels, source links, and destinations.
 Capture dates and editorial copy are in the generator; update them when evidence
 changes. Do not turn a prototype label into a production claim without evidence.
+
+`scripts/visitor-paths.mjs` constructs project-prefilled public intake links.
+The form files in `.github/ISSUE_TEMPLATE/` must retain the `product` field ID.
+Every directory page links to help, integration proposals and page corrections.
+This shared intake is a fallback for visitors, not a shared product runtime or a
+promise of support for every upstream fork. Product-specific trackers remain
+owned by their respective maintainers. Do not link disabled fork issue trackers.
 
 GitHub About metadata is managed separately; changing the catalog does not
 silently change another repository's description, topics, or homepage.
