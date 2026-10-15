@@ -21,3 +21,35 @@ jobs:
       - run: node --test scripts/visitor-paths.test.mjs
       - run: node scripts/build-directory.mjs
       - run: git diff --exit-code -- docs
+  reproducible-demo:
+    name: Evidence integration / Node ${{ matrix.node }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        node: ['22', '24']
+    env:
+      CERBERUS_DEMO_ROOT: .demo-deps/cerberus
+      WEAVER_DEMO_ROOT: .demo-deps/weaver
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          repository: BrandonDucar/dreamnet-cerberus
+          ref: 9d79def5155a7832b43140de82049aeff58b0866
+          path: .demo-deps/cerberus
+          persist-credentials: false
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          repository: BrandonDucar/memory-weaver
+          ref: a6f2a155bbbeea5d92879811afafa3fe65b6d828
+          path: .demo-deps/weaver
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: ${{ matrix.node }}
+      - run: node --experimental-strip-types --test scripts/reproduce-evidence.test.mjs
+      - run: node --experimental-strip-types scripts/reproduce-evidence.mjs run --out demo-output --cerberus "$CERBERUS_DEMO_ROOT" --weaver "$WEAVER_DEMO_ROOT"
+      - run: node --experimental-strip-types scripts/reproduce-evidence.mjs verify demo-output/bundle.json --cerberus "$CERBERUS_DEMO_ROOT" --weaver "$WEAVER_DEMO_ROOT"

@@ -1,0 +1,689 @@
+{
+  "schema": "dreamnet.public-integration-demo.v1",
+  "generatedAt": "2026-10-15T20:39:46.258Z",
+  "runnerSha256": "sha256:69954404fadc3a7e4f6b31cea36bf0b9ff23de820d40c77c56c7afd6e9d610fe",
+  "runtime": {
+    "node": "v26.7.0",
+    "platform": "win32"
+  },
+  "tools": {
+    "cerberus": {
+      "repository": "https://github.com/BrandonDucar/dreamnet-cerberus",
+      "revision": "9d79def5155a7832b43140de82049aeff58b0866",
+      "entry": "packages/cerberus-core/src/index.mjs",
+      "lfNormalizedSha256": "27edef6c6f01567feb360fc6644934a91ac54d566026fe583e015b1047a45771"
+    },
+    "weaver": {
+      "repository": "https://github.com/BrandonDucar/memory-weaver",
+      "revision": "a6f2a155bbbeea5d92879811afafa3fe65b6d828",
+      "entry": "app/lib/weaver.ts",
+      "lfNormalizedSha256": "9703005cd60af6071d846b677604cbcbc7d6cba1a821e1006ee39f913e547180"
+    }
+  },
+  "scope": {
+    "syntheticInputs": true,
+    "attestation": "unsigned",
+    "description": "Local static inspection to source-linked context. Not a deployment, publisher signature, safety guarantee or billing benchmark."
+  },
+  "receipts": {
+    "initial": {
+      "schema": "dreamnet.security-receipt.v1",
+      "receiptId": "cerberus_2026-10-15T20-39-46-258Z_258422a3d1b0",
+      "createdAt": "2026-10-15T20:39:46.258Z",
+      "intake": {
+        "source": "local:synthetic-public-fixture",
+        "sourceIdentity": "unverified",
+        "commit": null,
+        "retrievedAt": "2026-10-15T20:39:46.258Z",
+        "declaredPurpose": "Public reproducible integration test; synthetic input only",
+        "requestedBy": "public-demo",
+        "requestedPermissions": [],
+        "snapshotMode": "digest-only"
+      },
+      "artifact": {
+        "name": "synthetic-public-fixture",
+        "kind": "repository",
+        "digest": "sha256:fd8198e4295c0f25c99b6af9eeb6560487212535ba8623dd2e62258422a3d1b0",
+        "fileCount": 2,
+        "totalBytes": 240,
+        "includedPathCount": null,
+        "manifest": [
+          {
+            "path": "context.md",
+            "kind": "file",
+            "mode": 33206,
+            "size": 107,
+            "digest": "sha256:42e41d7498a1d913a4fd705bad2b7989bfea03449bb120af23fdd77f9491b7b3"
+          },
+          {
+            "path": "README.md",
+            "kind": "file",
+            "mode": 33206,
+            "size": 133,
+            "digest": "sha256:40be68666bf45232ba8759571727a84aa0ce0f5e68f81a049b089feb0d3cb616"
+          }
+        ]
+      },
+      "evidence": {
+        "staticFindings": [],
+        "findingCounts": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "networkDestinations": [],
+        "requestedCapabilities": [],
+        "observedCapabilities": [],
+        "highRiskFiles": [],
+        "skipped": []
+      },
+      "sbom": {
+        "format": "dreamnet.cerberus-sbom.v1",
+        "completeness": "declared-direct-dependencies",
+        "components": []
+      },
+      "riskScores": {
+        "provenance": 75,
+        "execution": 0,
+        "network": 0,
+        "dependency": 0,
+        "credential": 0,
+        "promptInjection": 0,
+        "ci": 0,
+        "integrity": 0,
+        "overall": 52
+      },
+      "verdict": "orange",
+      "decision": {
+        "inspectionPassed": false,
+        "installationAllowed": false,
+        "executionAllowed": false,
+        "humanReviewRequired": true,
+        "permittedVerdicts": [
+          "green"
+        ],
+        "reasons": [
+          "source_identity_unverified",
+          "publisher_identity_unverified",
+          "immutable_revision_unverified"
+        ]
+      },
+      "scanner": {
+        "name": "DreamNet Cerberus Repo Airlock",
+        "version": "0.1.0",
+        "mode": "static-offline",
+        "policy": "dreamnet.cerberus-policy.v1",
+        "rulesetDigest": "sha256:fb92fa3ae06c0c7013798dbbc1bf952292f79d34272082b4692a409097c8fc9c"
+      },
+      "limits": {
+        "configured": {
+          "maxFiles": 12000,
+          "maxTotalBytes": 262144000,
+          "maxTextBytesPerFile": 2097152,
+          "maxFindings": 2000,
+          "maxNetworkDestinations": 500
+        },
+        "reached": false,
+        "limitations": [
+          "Static inspection only; no artifact code was executed.",
+          "No threat-intelligence, registry, OSV, or network enrichment was performed.",
+          "No dynamic detonation or system-call observation was performed.",
+          "Receipt is hash-bound but unsigned until a signing identity is configured."
+        ]
+      },
+      "attestation": {
+        "status": "unsigned",
+        "signer": null,
+        "signature": null
+      },
+      "hashes": {
+        "contentSha256": "sha256:fd8198e4295c0f25c99b6af9eeb6560487212535ba8623dd2e62258422a3d1b0",
+        "receiptSha256": "sha256:eed7b1b7998c4975ebf3740847bde0f62e9f04818ae639226d889869456769eb"
+      }
+    },
+    "changed": {
+      "schema": "dreamnet.security-receipt.v1",
+      "receiptId": "cerberus_2026-10-15T20-39-46-258Z_b8637687302c",
+      "createdAt": "2026-10-15T20:39:46.258Z",
+      "intake": {
+        "source": "local:synthetic-public-fixture",
+        "sourceIdentity": "unverified",
+        "commit": null,
+        "retrievedAt": "2026-10-15T20:39:46.258Z",
+        "declaredPurpose": "Public reproducible integration test; synthetic input only",
+        "requestedBy": "public-demo",
+        "requestedPermissions": [],
+        "snapshotMode": "digest-only"
+      },
+      "artifact": {
+        "name": "synthetic-public-fixture",
+        "kind": "repository",
+        "digest": "sha256:6bdc45b89818b59e99b83c22c8ca89d62dbcd322e5442ddefbd5b8637687302c",
+        "fileCount": 2,
+        "totalBytes": 281,
+        "includedPathCount": null,
+        "manifest": [
+          {
+            "path": "context.md",
+            "kind": "file",
+            "mode": 33206,
+            "size": 148,
+            "digest": "sha256:a18b8d7a756cca3e24d675c82aed9559052adcc34882e36d8b7b9e45c7dc7205"
+          },
+          {
+            "path": "README.md",
+            "kind": "file",
+            "mode": 33206,
+            "size": 133,
+            "digest": "sha256:40be68666bf45232ba8759571727a84aa0ce0f5e68f81a049b089feb0d3cb616"
+          }
+        ]
+      },
+      "evidence": {
+        "staticFindings": [],
+        "findingCounts": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "networkDestinations": [],
+        "requestedCapabilities": [],
+        "observedCapabilities": [],
+        "highRiskFiles": [],
+        "skipped": []
+      },
+      "sbom": {
+        "format": "dreamnet.cerberus-sbom.v1",
+        "completeness": "declared-direct-dependencies",
+        "components": []
+      },
+      "riskScores": {
+        "provenance": 75,
+        "execution": 0,
+        "network": 0,
+        "dependency": 0,
+        "credential": 0,
+        "promptInjection": 0,
+        "ci": 0,
+        "integrity": 0,
+        "overall": 52
+      },
+      "verdict": "orange",
+      "decision": {
+        "inspectionPassed": false,
+        "installationAllowed": false,
+        "executionAllowed": false,
+        "humanReviewRequired": true,
+        "permittedVerdicts": [
+          "green"
+        ],
+        "reasons": [
+          "source_identity_unverified",
+          "publisher_identity_unverified",
+          "immutable_revision_unverified"
+        ]
+      },
+      "scanner": {
+        "name": "DreamNet Cerberus Repo Airlock",
+        "version": "0.1.0",
+        "mode": "static-offline",
+        "policy": "dreamnet.cerberus-policy.v1",
+        "rulesetDigest": "sha256:fb92fa3ae06c0c7013798dbbc1bf952292f79d34272082b4692a409097c8fc9c"
+      },
+      "limits": {
+        "configured": {
+          "maxFiles": 12000,
+          "maxTotalBytes": 262144000,
+          "maxTextBytesPerFile": 2097152,
+          "maxFindings": 2000,
+          "maxNetworkDestinations": 500
+        },
+        "reached": false,
+        "limitations": [
+          "Static inspection only; no artifact code was executed.",
+          "No threat-intelligence, registry, OSV, or network enrichment was performed.",
+          "No dynamic detonation or system-call observation was performed.",
+          "Receipt is hash-bound but unsigned until a signing identity is configured."
+        ]
+      },
+      "attestation": {
+        "status": "unsigned",
+        "signer": null,
+        "signature": null
+      },
+      "hashes": {
+        "contentSha256": "sha256:6bdc45b89818b59e99b83c22c8ca89d62dbcd322e5442ddefbd5b8637687302c",
+        "receiptSha256": "sha256:25fa2cd319bb72fb77aea3d5a66dea19a5b069e6ca2f5df517b13b0786968c1a"
+      }
+    },
+    "blocked": {
+      "schema": "dreamnet.security-receipt.v1",
+      "receiptId": "cerberus_2026-10-15T20-39-46-258Z_02677a3685f6",
+      "createdAt": "2026-10-15T20:39:46.258Z",
+      "intake": {
+        "source": "local:synthetic-public-fixture",
+        "sourceIdentity": "unverified",
+        "commit": null,
+        "retrievedAt": "2026-10-15T20:39:46.258Z",
+        "declaredPurpose": "Public reproducible integration test; synthetic input only",
+        "requestedBy": "public-demo",
+        "requestedPermissions": [],
+        "snapshotMode": "digest-only"
+      },
+      "artifact": {
+        "name": "synthetic-public-fixture",
+        "kind": "repository",
+        "digest": "sha256:1bcdddeae5b694df75c21f3edaed869805385a4199c377636a9402677a3685f6",
+        "fileCount": 3,
+        "totalBytes": 439,
+        "includedPathCount": null,
+        "manifest": [
+          {
+            "path": "context.md",
+            "kind": "file",
+            "mode": 33206,
+            "size": 148,
+            "digest": "sha256:a18b8d7a756cca3e24d675c82aed9559052adcc34882e36d8b7b9e45c7dc7205"
+          },
+          {
+            "path": "package.json",
+            "kind": "file",
+            "mode": 33206,
+            "size": 158,
+            "digest": "sha256:3512df8448aefc50e0de55740a9b487f56ad96d4e51e05de7418a45232465313"
+          },
+          {
+            "path": "README.md",
+            "kind": "file",
+            "mode": 33206,
+            "size": 133,
+            "digest": "sha256:40be68666bf45232ba8759571727a84aa0ce0f5e68f81a049b089feb0d3cb616"
+          }
+        ]
+      },
+      "evidence": {
+        "staticFindings": [
+          {
+            "id": "cerb_0677617a729e8a70",
+            "ruleId": "npm.lifecycle.postinstall",
+            "severity": "critical",
+            "category": "execution",
+            "file": "package.json",
+            "line": null,
+            "message": "Automatic npm lifecycle script declared: postinstall.",
+            "evidenceHash": "800f016d29b2441953207e6238e4cad2b6f45bd7374cc2d98487dbaf62623c80",
+            "autoRun": true
+          },
+          {
+            "id": "cerb_0c6a62116de7c463",
+            "ruleId": "execution.shell-pipe",
+            "severity": "critical",
+            "category": "execution",
+            "file": "package.json",
+            "line": 5,
+            "message": "Remote content is piped directly into a shell.",
+            "evidenceHash": "800f016d29b2441953207e6238e4cad2b6f45bd7374cc2d98487dbaf62623c80",
+            "autoRun": false
+          }
+        ],
+        "findingCounts": {
+          "critical": 2,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "networkDestinations": [
+          {
+            "scheme": "https",
+            "host": "example.invalid",
+            "port": null,
+            "files": [
+              "package.json"
+            ]
+          }
+        ],
+        "requestedCapabilities": [
+          "network/egress",
+          "process/execute"
+        ],
+        "observedCapabilities": [],
+        "highRiskFiles": [
+          "package.json"
+        ],
+        "skipped": []
+      },
+      "sbom": {
+        "format": "dreamnet.cerberus-sbom.v1",
+        "completeness": "declared-direct-dependencies",
+        "components": []
+      },
+      "riskScores": {
+        "provenance": 75,
+        "execution": 100,
+        "network": 0,
+        "dependency": 0,
+        "credential": 0,
+        "promptInjection": 0,
+        "ci": 0,
+        "integrity": 0,
+        "overall": 85
+      },
+      "verdict": "red",
+      "decision": {
+        "inspectionPassed": false,
+        "installationAllowed": false,
+        "executionAllowed": false,
+        "humanReviewRequired": true,
+        "permittedVerdicts": [
+          "green"
+        ],
+        "reasons": [
+          "source_identity_unverified",
+          "publisher_identity_unverified",
+          "immutable_revision_unverified",
+          "critical_static_finding",
+          "automatic_execution_surface"
+        ]
+      },
+      "scanner": {
+        "name": "DreamNet Cerberus Repo Airlock",
+        "version": "0.1.0",
+        "mode": "static-offline",
+        "policy": "dreamnet.cerberus-policy.v1",
+        "rulesetDigest": "sha256:fb92fa3ae06c0c7013798dbbc1bf952292f79d34272082b4692a409097c8fc9c"
+      },
+      "limits": {
+        "configured": {
+          "maxFiles": 12000,
+          "maxTotalBytes": 262144000,
+          "maxTextBytesPerFile": 2097152,
+          "maxFindings": 2000,
+          "maxNetworkDestinations": 500
+        },
+        "reached": false,
+        "limitations": [
+          "Static inspection only; no artifact code was executed.",
+          "No threat-intelligence, registry, OSV, or network enrichment was performed.",
+          "No dynamic detonation or system-call observation was performed.",
+          "Receipt is hash-bound but unsigned until a signing identity is configured."
+        ]
+      },
+      "attestation": {
+        "status": "unsigned",
+        "signer": null,
+        "signature": null
+      },
+      "hashes": {
+        "contentSha256": "sha256:1bcdddeae5b694df75c21f3edaed869805385a4199c377636a9402677a3685f6",
+        "receiptSha256": "sha256:ab0aa626c7a4e7337fa4af70fc27e6fbb1dcb63eb363c5250d4003b1a523a8f2"
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "fixture-0",
+      "title": "README.md",
+      "kind": "document",
+      "content": "# Public fixture\nPortable context preserves provenance and receipts. This synthetic repository is inspected as data, never executed.\n",
+      "origin": "fixture:README.md",
+      "addedAt": "2026-10-15T20:39:46.258Z",
+      "updatedAt": "2026-10-15T20:39:46.258Z",
+      "tags": [
+        "provenance",
+        "receipts"
+      ],
+      "mock": true
+    },
+    {
+      "id": "fixture-1",
+      "title": "context.md",
+      "kind": "document",
+      "content": "# Handoff\nPortable context links source provenance and receipts. Review the original source before acting.\n",
+      "origin": "fixture:context.md",
+      "addedAt": "2026-10-15T20:39:46.258Z",
+      "updatedAt": "2026-10-15T20:39:46.258Z",
+      "tags": [
+        "provenance",
+        "receipts"
+      ],
+      "mock": true
+    },
+    {
+      "id": "inspection",
+      "title": "Cerberus inspection context",
+      "kind": "document",
+      "content": "Cerberus static inspection receipts preserve provenance. Portable context retains the inspected source digest sha256:fd8198e4295c0f25c99b6af9eeb6560487212535ba8623dd2e62258422a3d1b0. Verdict orange; publisher identity is not authenticated. Receipts are unsigned and do not grant execution permission.",
+      "origin": "receipt:sha256:eed7b1b7998c4975ebf3740847bde0f62e9f04818ae639226d889869456769eb",
+      "addedAt": "2026-10-15T20:39:46.258Z",
+      "updatedAt": "2026-10-15T20:39:46.258Z",
+      "tags": [
+        "provenance",
+        "receipts"
+      ],
+      "mock": true
+    }
+  ],
+  "weave": {
+    "version": "1.0",
+    "generatedAt": "2026-10-15T20:39:46.258Z",
+    "topics": [
+      {
+        "id": "topic_d39a8b89",
+        "label": "Portable Context",
+        "score": 3,
+        "sourceIds": [
+          "fixture-0",
+          "fixture-1",
+          "inspection"
+        ]
+      },
+      {
+        "id": "topic_a7358a42",
+        "label": "Provenance",
+        "score": 3,
+        "sourceIds": [
+          "fixture-0",
+          "fixture-1",
+          "inspection"
+        ]
+      },
+      {
+        "id": "topic_f92a8190",
+        "label": "Receipts",
+        "score": 3,
+        "sourceIds": [
+          "fixture-0",
+          "fixture-1",
+          "inspection"
+        ]
+      },
+      {
+        "id": "topic_8c87107c",
+        "label": "Context",
+        "score": 2,
+        "sourceIds": [
+          "fixture-1",
+          "inspection"
+        ]
+      },
+      {
+        "id": "topic_fba971de",
+        "label": "Cerberus",
+        "score": 1,
+        "sourceIds": [
+          "inspection"
+        ]
+      },
+      {
+        "id": "topic_b2785693",
+        "label": "Inspection",
+        "score": 1,
+        "sourceIds": [
+          "inspection"
+        ]
+      },
+      {
+        "id": "topic_1bcf29d8",
+        "label": "Source",
+        "score": 1,
+        "sourceIds": [
+          "fixture-1"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge_fixture-0_topic_d39a8b89",
+        "from": "fixture-0",
+        "to": "topic_d39a8b89",
+        "kind": "mentions",
+        "label": "Portable Context",
+        "weight": 3
+      },
+      {
+        "id": "edge_fixture-1_topic_d39a8b89",
+        "from": "fixture-1",
+        "to": "topic_d39a8b89",
+        "kind": "mentions",
+        "label": "Portable Context",
+        "weight": 3
+      },
+      {
+        "id": "edge_inspection_topic_d39a8b89",
+        "from": "inspection",
+        "to": "topic_d39a8b89",
+        "kind": "mentions",
+        "label": "Portable Context",
+        "weight": 3
+      },
+      {
+        "id": "edge_fixture-0_topic_a7358a42",
+        "from": "fixture-0",
+        "to": "topic_a7358a42",
+        "kind": "mentions",
+        "label": "Provenance",
+        "weight": 3
+      },
+      {
+        "id": "edge_fixture-1_topic_a7358a42",
+        "from": "fixture-1",
+        "to": "topic_a7358a42",
+        "kind": "mentions",
+        "label": "Provenance",
+        "weight": 3
+      },
+      {
+        "id": "edge_inspection_topic_a7358a42",
+        "from": "inspection",
+        "to": "topic_a7358a42",
+        "kind": "mentions",
+        "label": "Provenance",
+        "weight": 3
+      },
+      {
+        "id": "edge_fixture-0_topic_f92a8190",
+        "from": "fixture-0",
+        "to": "topic_f92a8190",
+        "kind": "mentions",
+        "label": "Receipts",
+        "weight": 3
+      },
+      {
+        "id": "edge_fixture-1_topic_f92a8190",
+        "from": "fixture-1",
+        "to": "topic_f92a8190",
+        "kind": "mentions",
+        "label": "Receipts",
+        "weight": 3
+      },
+      {
+        "id": "edge_inspection_topic_f92a8190",
+        "from": "inspection",
+        "to": "topic_f92a8190",
+        "kind": "mentions",
+        "label": "Receipts",
+        "weight": 3
+      },
+      {
+        "id": "edge_fixture-1_topic_8c87107c",
+        "from": "fixture-1",
+        "to": "topic_8c87107c",
+        "kind": "mentions",
+        "label": "Context",
+        "weight": 2
+      },
+      {
+        "id": "edge_inspection_topic_8c87107c",
+        "from": "inspection",
+        "to": "topic_8c87107c",
+        "kind": "mentions",
+        "label": "Context",
+        "weight": 2
+      },
+      {
+        "id": "edge_inspection_topic_fba971de",
+        "from": "inspection",
+        "to": "topic_fba971de",
+        "kind": "mentions",
+        "label": "Cerberus",
+        "weight": 1
+      },
+      {
+        "id": "edge_inspection_topic_b2785693",
+        "from": "inspection",
+        "to": "topic_b2785693",
+        "kind": "mentions",
+        "label": "Inspection",
+        "weight": 1
+      },
+      {
+        "id": "edge_fixture-1_topic_1bcf29d8",
+        "from": "fixture-1",
+        "to": "topic_1bcf29d8",
+        "kind": "mentions",
+        "label": "Source",
+        "weight": 1
+      },
+      {
+        "id": "edge_related_fixture-0_fixture-1",
+        "from": "fixture-0",
+        "to": "fixture-1",
+        "kind": "related",
+        "label": "Portable Context, Provenance, Receipts",
+        "weight": 3
+      },
+      {
+        "id": "edge_related_fixture-0_inspection",
+        "from": "fixture-0",
+        "to": "inspection",
+        "kind": "related",
+        "label": "Portable Context, Provenance, Receipts",
+        "weight": 3
+      },
+      {
+        "id": "edge_related_fixture-1_inspection",
+        "from": "fixture-1",
+        "to": "inspection",
+        "kind": "related",
+        "label": "Portable Context, Provenance, Receipts",
+        "weight": 4
+      }
+    ],
+    "issues": [],
+    "receipt": {
+      "id": "receipt_3312af1f-6fef-4f28-9e80-e11aac155105",
+      "generatedAt": "2026-10-15T20:39:46.258Z",
+      "inputHash": "fnv1a-24f405f9",
+      "outputHash": "fnv1a-41b5a56d",
+      "sourceCount": 3,
+      "topicCount": 7,
+      "relationshipCount": 3,
+      "issueCount": 0,
+      "engine": "memory-weaver-browser-v1"
+    }
+  },
+  "weaveSha256": "sha256:3b4a8b93af842c337de2ade5f88746b2947999ee80219109103c53aca4fc5188",
+  "bundleSha256": "sha256:fa7dce129c8ed92ba5636a438411bfb98bce37468f13e459723d6ac11ff209f2"
+}

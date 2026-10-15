@@ -39,3 +39,24 @@ silently change another repository's description, topics, or homepage.
 
 Rollback a directory change with a reviewed Git revert. Do not overwrite
 concurrent contributions or delete the Pages site to undo a content change.
+
+## Reproducible Example
+
+The profile and Cerberus/Memory Weaver directory pages link the existing public
+tools through `scripts/reproduce-evidence.mjs`, not a new hosted runtime. Read
+[the reproduction guide](REPRODUCIBLE_DEMO.md). Tool revisions and LF-normalized
+entry-file SHA-256 values live in `scripts/demo-sources.json`. Changing either
+requires review and new test evidence; the loader fails closed on source drift.
+
+`docs/evidence/bundle.json`, `capsule.md` and `workspace.weave.json` are generated public-safe artifacts
+from one local execution. They contain synthetic sources and unsigned receipts,
+not private inventories or a production claim. To refresh, generate into a new
+directory, verify it, review it for privacy, then replace only those generated
+artifacts. Never invent result counters in the HTML. The directory generator
+reads the artifact's time, counts and verdicts.
+
+Run `node --experimental-strip-types --test scripts/reproduce-evidence.test.mjs`
+with the pinned public checkouts available. CI checks both Node 22 and Node 24,
+without installing dependencies or fetching private code. Reproduction means
+matching semantic results; random receipt IDs, times and filesystem modes are
+not promised to be byte-identical across machines.

@@ -21,6 +21,11 @@ the screenshot is not a receipt for real-world work.*
 
 ## Start With A Problem
 
+**Try one reproducible result:** [Inspect a repository and keep its evidence](REPRODUCIBLE_DEMO.md).
+Cerberus inspection feeds Memory Weaver's source-linked context export. Runs
+locally without dependencies or API keys; includes tampering, changed-input and
+blocked-install cases. Synthetic inputs, actual execution, unsigned receipts.
+
 | I need to... | Try | What it provides |
 | --- | --- | --- |
 | Preserve and resume bounded agent work | [DreamLoops](https://github.com/BrandonDucar/dreamloops) | Versioned operating loops, capability Capsules, execution records |

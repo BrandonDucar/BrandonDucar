@@ -1,0 +1,14 @@
+{
+  "cerberus": {
+    "repository": "https://github.com/BrandonDucar/dreamnet-cerberus",
+    "revision": "9d79def5155a7832b43140de82049aeff58b0866",
+    "entry": "packages/cerberus-core/src/index.mjs",
+    "lfNormalizedSha256": "27edef6c6f01567feb360fc6644934a91ac54d566026fe583e015b1047a45771"
+  },
+  "weaver": {
+    "repository": "https://github.com/BrandonDucar/memory-weaver",
+    "revision": "a6f2a155bbbeea5d92879811afafa3fe65b6d828",
+    "entry": "app/lib/weaver.ts",
+    "lfNormalizedSha256": "9703005cd60af6071d846b677604cbcbc7d6cba1a821e1006ee39f913e547180"
+  }
+}

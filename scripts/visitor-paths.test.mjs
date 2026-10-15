@@ -63,3 +63,20 @@ test('public support copy preserves independence and private reporting boundarie
   assert(!support.includes('C:/Users/'));
   assert(fs.existsSync(fileURLToPath(new URL('CONTRIBUTING.md', root))));
 });
+
+test('flagship visitor paths expose the actual evidence with its limits', () => {
+  const evidence = JSON.parse(read('docs/evidence/bundle.json'));
+  for (const page of ['docs/index.html', 'docs/projects/dreamnet-cerberus/index.html', 'docs/projects/memory-weaver/index.html']) {
+    const html = read(page);
+    assert(html.includes('id="verified-example"'));
+    assert(html.includes(evidence.generatedAt));
+    assert(html.includes(`${evidence.sources.length} source records`));
+    assert(html.includes('Synthetic inputs. Actual tool execution. Unsigned receipts.'));
+    assert(html.includes('ORANGE / denied'));
+    assert(html.includes('RED / denied'));
+    assert(html.includes('REPRODUCIBLE_DEMO.md'));
+    assert(html.includes('evidence/bundle.json'));
+  }
+  assert(read('docs/index.html').indexOf('id="verified-example"') < read('docs/index.html').indexOf('Inside the tools'));
+  assert(read('README.md').includes('REPRODUCIBLE_DEMO.md'));
+});

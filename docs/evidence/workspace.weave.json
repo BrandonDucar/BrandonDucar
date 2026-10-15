@@ -1,0 +1,288 @@
+{
+  "format": "memory-weaver-archive",
+  "version": "1.0",
+  "exportedAt": "2026-10-15T20:39:46.258Z",
+  "workspace": {
+    "id": "public-integration-demo",
+    "name": "Synthetic Cerberus evidence handoff",
+    "createdAt": "2026-10-15T20:39:46.258Z",
+    "updatedAt": "2026-10-15T20:39:46.258Z",
+    "sources": [
+      {
+        "id": "fixture-0",
+        "title": "README.md",
+        "kind": "document",
+        "content": "# Public fixture\nPortable context preserves provenance and receipts. This synthetic repository is inspected as data, never executed.\n",
+        "origin": "fixture:README.md",
+        "addedAt": "2026-10-15T20:39:46.258Z",
+        "updatedAt": "2026-10-15T20:39:46.258Z",
+        "tags": [
+          "provenance",
+          "receipts"
+        ],
+        "mock": true
+      },
+      {
+        "id": "fixture-1",
+        "title": "context.md",
+        "kind": "document",
+        "content": "# Handoff\nPortable context links source provenance and receipts. Review the original source before acting.\n",
+        "origin": "fixture:context.md",
+        "addedAt": "2026-10-15T20:39:46.258Z",
+        "updatedAt": "2026-10-15T20:39:46.258Z",
+        "tags": [
+          "provenance",
+          "receipts"
+        ],
+        "mock": true
+      },
+      {
+        "id": "inspection",
+        "title": "Cerberus inspection context",
+        "kind": "document",
+        "content": "Cerberus static inspection receipts preserve provenance. Portable context retains the inspected source digest sha256:fd8198e4295c0f25c99b6af9eeb6560487212535ba8623dd2e62258422a3d1b0. Verdict orange; publisher identity is not authenticated. Receipts are unsigned and do not grant execution permission.",
+        "origin": "receipt:sha256:eed7b1b7998c4975ebf3740847bde0f62e9f04818ae639226d889869456769eb",
+        "addedAt": "2026-10-15T20:39:46.258Z",
+        "updatedAt": "2026-10-15T20:39:46.258Z",
+        "tags": [
+          "provenance",
+          "receipts"
+        ],
+        "mock": true
+      }
+    ],
+    "result": {
+      "version": "1.0",
+      "generatedAt": "2026-10-15T20:39:46.258Z",
+      "topics": [
+        {
+          "id": "topic_d39a8b89",
+          "label": "Portable Context",
+          "score": 3,
+          "sourceIds": [
+            "fixture-0",
+            "fixture-1",
+            "inspection"
+          ]
+        },
+        {
+          "id": "topic_a7358a42",
+          "label": "Provenance",
+          "score": 3,
+          "sourceIds": [
+            "fixture-0",
+            "fixture-1",
+            "inspection"
+          ]
+        },
+        {
+          "id": "topic_f92a8190",
+          "label": "Receipts",
+          "score": 3,
+          "sourceIds": [
+            "fixture-0",
+            "fixture-1",
+            "inspection"
+          ]
+        },
+        {
+          "id": "topic_8c87107c",
+          "label": "Context",
+          "score": 2,
+          "sourceIds": [
+            "fixture-1",
+            "inspection"
+          ]
+        },
+        {
+          "id": "topic_fba971de",
+          "label": "Cerberus",
+          "score": 1,
+          "sourceIds": [
+            "inspection"
+          ]
+        },
+        {
+          "id": "topic_b2785693",
+          "label": "Inspection",
+          "score": 1,
+          "sourceIds": [
+            "inspection"
+          ]
+        },
+        {
+          "id": "topic_1bcf29d8",
+          "label": "Source",
+          "score": 1,
+          "sourceIds": [
+            "fixture-1"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "id": "edge_fixture-0_topic_d39a8b89",
+          "from": "fixture-0",
+          "to": "topic_d39a8b89",
+          "kind": "mentions",
+          "label": "Portable Context",
+          "weight": 3
+        },
+        {
+          "id": "edge_fixture-1_topic_d39a8b89",
+          "from": "fixture-1",
+          "to": "topic_d39a8b89",
+          "kind": "mentions",
+          "label": "Portable Context",
+          "weight": 3
+        },
+        {
+          "id": "edge_inspection_topic_d39a8b89",
+          "from": "inspection",
+          "to": "topic_d39a8b89",
+          "kind": "mentions",
+          "label": "Portable Context",
+          "weight": 3
+        },
+        {
+          "id": "edge_fixture-0_topic_a7358a42",
+          "from": "fixture-0",
+          "to": "topic_a7358a42",
+          "kind": "mentions",
+          "label": "Provenance",
+          "weight": 3
+        },
+        {
+          "id": "edge_fixture-1_topic_a7358a42",
+          "from": "fixture-1",
+          "to": "topic_a7358a42",
+          "kind": "mentions",
+          "label": "Provenance",
+          "weight": 3
+        },
+        {
+          "id": "edge_inspection_topic_a7358a42",
+          "from": "inspection",
+          "to": "topic_a7358a42",
+          "kind": "mentions",
+          "label": "Provenance",
+          "weight": 3
+        },
+        {
+          "id": "edge_fixture-0_topic_f92a8190",
+          "from": "fixture-0",
+          "to": "topic_f92a8190",
+          "kind": "mentions",
+          "label": "Receipts",
+          "weight": 3
+        },
+        {
+          "id": "edge_fixture-1_topic_f92a8190",
+          "from": "fixture-1",
+          "to": "topic_f92a8190",
+          "kind": "mentions",
+          "label": "Receipts",
+          "weight": 3
+        },
+        {
+          "id": "edge_inspection_topic_f92a8190",
+          "from": "inspection",
+          "to": "topic_f92a8190",
+          "kind": "mentions",
+          "label": "Receipts",
+          "weight": 3
+        },
+        {
+          "id": "edge_fixture-1_topic_8c87107c",
+          "from": "fixture-1",
+          "to": "topic_8c87107c",
+          "kind": "mentions",
+          "label": "Context",
+          "weight": 2
+        },
+        {
+          "id": "edge_inspection_topic_8c87107c",
+          "from": "inspection",
+          "to": "topic_8c87107c",
+          "kind": "mentions",
+          "label": "Context",
+          "weight": 2
+        },
+        {
+          "id": "edge_inspection_topic_fba971de",
+          "from": "inspection",
+          "to": "topic_fba971de",
+          "kind": "mentions",
+          "label": "Cerberus",
+          "weight": 1
+        },
+        {
+          "id": "edge_inspection_topic_b2785693",
+          "from": "inspection",
+          "to": "topic_b2785693",
+          "kind": "mentions",
+          "label": "Inspection",
+          "weight": 1
+        },
+        {
+          "id": "edge_fixture-1_topic_1bcf29d8",
+          "from": "fixture-1",
+          "to": "topic_1bcf29d8",
+          "kind": "mentions",
+          "label": "Source",
+          "weight": 1
+        },
+        {
+          "id": "edge_related_fixture-0_fixture-1",
+          "from": "fixture-0",
+          "to": "fixture-1",
+          "kind": "related",
+          "label": "Portable Context, Provenance, Receipts",
+          "weight": 3
+        },
+        {
+          "id": "edge_related_fixture-0_inspection",
+          "from": "fixture-0",
+          "to": "inspection",
+          "kind": "related",
+          "label": "Portable Context, Provenance, Receipts",
+          "weight": 3
+        },
+        {
+          "id": "edge_related_fixture-1_inspection",
+          "from": "fixture-1",
+          "to": "inspection",
+          "kind": "related",
+          "label": "Portable Context, Provenance, Receipts",
+          "weight": 4
+        }
+      ],
+      "issues": [],
+      "receipt": {
+        "id": "receipt_3312af1f-6fef-4f28-9e80-e11aac155105",
+        "generatedAt": "2026-10-15T20:39:46.258Z",
+        "inputHash": "fnv1a-24f405f9",
+        "outputHash": "fnv1a-41b5a56d",
+        "sourceCount": 3,
+        "topicCount": 7,
+        "relationshipCount": 3,
+        "issueCount": 0,
+        "engine": "memory-weaver-browser-v1"
+      }
+    },
+    "receipts": [
+      {
+        "id": "receipt_3312af1f-6fef-4f28-9e80-e11aac155105",
+        "generatedAt": "2026-10-15T20:39:46.258Z",
+        "inputHash": "fnv1a-24f405f9",
+        "outputHash": "fnv1a-41b5a56d",
+        "sourceCount": 3,
+        "topicCount": 7,
+        "relationshipCount": 3,
+        "issueCount": 0,
+        "engine": "memory-weaver-browser-v1"
+      }
+    ],
+    "isDemo": true
+  }
+}
