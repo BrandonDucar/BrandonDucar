@@ -1,10 +1,34 @@
-# DreamNet
+# Brandon Ducar | DreamNet
 
-**Reusable tools for AI work that survives the chat.**
+**AI should do useful work, remember why, and show its evidence.**
 
-I'm Brandon Ducar. I'm building toward a shared operating system for digital
-and physical businesses. These public projects tackle practical pieces: keeping
-useful context, bounding agent work, and making results inspectable.
+I'm Brandon Ducar, building DreamNet: connected tools and contracts for AI work
+that survives the chat. The aim is a shared operating system for digital and
+physical businesses. The public projects tackle concrete pieces: persistent
+context, bounded work, source-linked knowledge, and results you can inspect.
+
+## Featured: BREAKSHIFT
+
+**Your AI says "fixed." BREAKSHIFT says: prove it.**
+
+Inspect a component, challenge a repair plan, and replay the evidence in a
+simulated robotic workcell. Change the assumptions and stale passes are withdrawn.
+Simulation is not physical repair clearance.
+
+[Try the open demo](https://breakshift-maintenance-bay.dreamnet-intel.workers.dev/) |
+[Watch the corrected v2.2 demo](https://www.youtube.com/watch?v=o6qEsiYmQdM) |
+[Inspect the source](https://github.com/BrandonDucar/breakshift)
+
+The workbench opens without a login. Fresh paid model analysis remains
+operator-restricted; retained model outputs are labeled as recorded.
+
+## Connected By Design
+
+DreamNet's design draws from natural systems and human engineering, not one
+giant agent or a literal artificial human. The direction is simple: keep what
+works, improve its connections, test the result, and preserve what we learn.
+That is an engineering goal, not a claim of autonomous recursive self-improvement
+or a verified active fleet. Each repository states what it actually implements.
 
 [Explore the project directory](https://brandonducar.github.io/BrandonDucar/) |
 [Ecosystem map](ECOSYSTEM.md) | [DreamNet](https://dreamnet.ink)
@@ -49,7 +73,7 @@ current runtime, an endorsement, or DreamNet ownership.
 - [ToolGym](https://github.com/BrandonDucar/toolgym): agent workouts; practice is not independent qualification.
 - [LaunchCast](https://github.com/BrandonDucar/launchcast): repository-to-storyboard and local video rendering; uploads are not implemented.
 - [Dreamnetiopi](https://github.com/BrandonDucar/dreamnetopi-hackday): merchant-operations rehearsal, not production telemetry.
-- [All 32 public repositories](https://brandonducar.github.io/BrandonDucar/#projects): apps, libraries, research, prototypes, and attributed forks.
+- [Public project directory](https://brandonducar.github.io/BrandonDucar/#projects): a dated catalog of apps, libraries, research, prototypes, and attributed forks, not a live inventory.
 
 ## Build With Us
 
@@ -71,3 +95,6 @@ DreamNet is early. Each repo has its own implementation boundaries and license.
 A receipt is not proof that every claim inside it is true, and a capability is
 not permission to act. Private credentials, customer data, and operating context
 do not belong in public examples.
+
+Public overview revision: **1.0.0**, November 4, 2026. This is a documentation
+revision, not a synchronized release of every linked product.
