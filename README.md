@@ -2,10 +2,13 @@
 
 **AI should do useful work, remember why, and show its evidence.**
 
-I'm Brandon Ducar, building DreamNet: connected tools and contracts for AI work
-that survives the chat. The aim is a shared operating system for digital and
-physical businesses. The public projects tackle concrete pieces: persistent
-context, bounded work, source-linked knowledge, and results you can inspect.
+I'm Brandon Ducar. I build DreamNet tools for persistent context, bounded AI work,
+and results people can inspect. Start with a working demo, a small reproducible
+example, or a contribution to one public project.
+
+[Try BREAKSHIFT](https://breakshift-maintenance-bay.dreamnet-intel.workers.dev/) |
+[Explore the projects](#project-directory) |
+[Contribute](CONTRIBUTING.md)
 
 ## Featured: BREAKSHIFT
 
@@ -22,21 +25,43 @@ Simulation is not physical repair clearance.
 The workbench opens without a login. Fresh paid model analysis remains
 operator-restricted; retained model outputs are labeled as recorded.
 
-## Connected By Design
+## Accepted Upstream: Hermes Verify
 
-DreamNet's design draws from natural systems and human engineering, not one
-giant agent or a literal artificial human. The direction is simple: keep what
-works, improve its connections, test the result, and preserve what we learn.
-That is an engineering goal, not a claim of autonomous recursive self-improvement
-or a verified active fleet. Each repository states what it actually implements.
+[Hermes Verify](https://github.com/BrandonDucar/hermes-verify) adds unverified-output
+labels, tool-risk checks, and inspectable result receipts for Hermes Agent.
+Its **0.5.0 community catalog contribution was merged** into Nous Research
+Hermes Agent on November 12, 2026:
+[accepted catalog PR #153179](https://github.com/NousResearch/hermes-agent/pull/153179).
 
-[Explore the project directory](https://brandonducar.github.io/BrandonDucar/) |
+[Inspect the catalog-pinned 0.5.0 source](https://github.com/BrandonDucar/hermes-verify/tree/22cd13c6ae7e07296a333b31c828db44455098ef) |
+[Watch the 78-second synthetic demo](https://x.com/GhostmintO71217/status/2120374839672439108)
+
+Catalog acceptance is separate from installation or runtime adoption. The demo
+uses synthetic inputs; labels and heuristic checks do not establish factual truth,
+action completion, or a security guarantee.
+
+## Project Directory
+
+Choose the smallest tool that fits your problem. Each project has its own setup,
+license, data boundaries, and release lifecycle.
+
+| I need to... | Start here | What to expect |
+| --- | --- | --- |
+| Challenge a repair plan | [BREAKSHIFT demo](https://breakshift-maintenance-bay.dreamnet-intel.workers.dev/) / [source](https://github.com/BrandonDucar/breakshift) | Simulated workcell and evidence replay; no physical repair clearance |
+| Inspect agent claims and tool returns | [Hermes Verify 0.5.0](https://github.com/BrandonDucar/hermes-verify/tree/22cd13c6ae7e07296a333b31c828db44455098ef) | Output labels, heuristic tool-risk checks, local receipts |
+| Preserve and resume bounded work | [DreamLoops](https://github.com/BrandonDucar/dreamloops) | Versioned loops, capability Capsules, execution records |
+| Inspect a repository before running it | [Cerberus](https://github.com/BrandonDucar/dreamnet-cerberus) | Offline static findings tied to source digests; no safety guarantee |
+| Review agent-run context | [Darkhalo](https://darkhalo.dreamnet-intel.workers.dev) | Local-first inspection and review capsules |
+| Prepare source-linked knowledge | [Memory Weaver](https://github.com/BrandonDucar/memory-weaver) | Portable context with provenance |
+| Hand off context or build evidence | [Warper Keeper](https://warper-keeper.dreamnet.ink) / [Proof Drop](https://proof-drop-zabal.pages.dev) | Context bundles and local evidence-file hashing with exported receipts |
+
+[Browse the full public directory](https://brandonducar.github.io/BrandonDucar/) |
 [Ecosystem map](ECOSYSTEM.md) | [DreamNet](https://dreamnet.ink)
 
-**Independent products. Optional connections. Private operations.** Start with
-one project's documented setup; you do not need access to DreamNet's private
-monorepo. Each product keeps its own requirements, license, data boundaries and
-release lifecycle. Integrations use explicit interfaces, not shared credentials.
+**Independent products. Optional connections. Private operations.** You do not
+need DreamNet's private monorepo to use a public project. Integrations use explicit
+interfaces, not shared credentials. The larger connected-system design remains
+an engineering goal; these links do not establish a verified active fleet.
 
 [![Darkhalo evidence intake workspace](docs/assets/darkhalo.png)](https://darkhalo.dreamnet-intel.workers.dev)
 
@@ -49,15 +74,6 @@ the screenshot is not a receipt for real-world work.*
 Cerberus inspection feeds Memory Weaver's source-linked context export. Runs
 locally without dependencies or API keys; includes tampering, changed-input and
 blocked-install cases. Synthetic inputs, actual execution, unsigned receipts.
-
-| I need to... | Try | What it provides |
-| --- | --- | --- |
-| Preserve and resume bounded agent work | [DreamLoops](https://github.com/BrandonDucar/dreamloops) | Versioned operating loops, capability Capsules, execution records |
-| Inspect a repo before running it | [Cerberus](https://github.com/BrandonDucar/dreamnet-cerberus) | Offline static inspection and digest-bound findings, not a safety guarantee |
-| Review agent-run context | [Darkhalo](https://darkhalo.dreamnet-intel.workers.dev) | Local-first inspection and review capsules, no automatic authority |
-| Prepare source-linked knowledge | [Memory Weaver](https://github.com/BrandonDucar/memory-weaver) | Portable context with provenance |
-| Hand work to someone else | [Warper Keeper](https://warper-keeper.dreamnet.ink) | Source-first Trapper context bundles |
-| Package evidence for a build | [Proof Drop](https://proof-drop-zabal.pages.dev) | Local evidence-file hashing and exported receipts |
 
 ## Integrated Outside DreamNet
 
@@ -96,5 +112,5 @@ A receipt is not proof that every claim inside it is true, and a capability is
 not permission to act. Private credentials, customer data, and operating context
 do not belong in public examples.
 
-Public overview revision: **1.0.0**, November 4, 2026. This is a documentation
+Public overview revision: **1.1.0**, November 12, 2026. This is a documentation
 revision, not a synchronized release of every linked product.
